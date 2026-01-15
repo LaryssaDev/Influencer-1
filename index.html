@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torne-se um Influencer</title>
-    <!-- Mantemos o Tailwind via CDN para simplicidade, mas agora o React será compilado -->
+    <!-- Tailwind via CDN (Mantido para preservar estilos sem setup complexo de PostCSS) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
     <script>
@@ -55,14 +55,15 @@
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
     "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
     "recharts": "https://esm.sh/recharts@^3.6.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "vite": "https://esm.sh/vite@^7.3.1"
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
   <body class="bg-black text-white antialiased overflow-hidden">
     <div id="root"></div>
+    <!-- O Vite transformará este script automaticamente no build final -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
